@@ -1,0 +1,47 @@
+<h1>Listing medidas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ombro</th>
+      <th>Torax</th>
+      <th>Braco esquerdo</th>
+      <th>Braco direito</th>
+      <th>Panturrilha esquerda</th>
+      <th>Panturrilha direita</th>
+      <th>Abdomem</th>
+      <th>Cintura</th>
+      <th>Quadril</th>
+      <th>Coxa esquerda</th>
+      <th>Coxa direita</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @medidas.each do |medida| %>
+      <tr>
+        <td><%= medida.ombro %></td>
+        <td><%= medida.torax %></td>
+        <td><%= medida.braco_esquerdo %></td>
+        <td><%= medida.braco_direito %></td>
+        <td><%= medida.panturrilha_esquerda %></td>
+        <td><%= medida.panturrilha_direita %></td>
+        <td><%= medida.abdomem %></td>
+        <td><%= medida.cintura %></td>
+        <td><%= medida.quadril %></td>
+        <td><%= medida.coxa_esquerda %></td>
+        <td><%= medida.coxa_direita %></td>
+        <td><%= link_to 'Show', medida %></td>
+        <td><%= link_to 'Edit', edit_medida_path(medida) %></td>
+        <td><%= link_to 'Destroy', medida, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Medida', new_medida_path %>

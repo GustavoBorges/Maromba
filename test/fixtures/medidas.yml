@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ombro: 9.99
+  torax: 9.99
+  braco_esquerdo: 9.99
+  braco_direito: 9.99
+  panturrilha_esquerda: 9.99
+  panturrilha_direita: 9.99
+  abdomem: 9.99
+  cintura: 9.99
+  quadril: 9.99
+  coxa_esquerda: 9.99
+  coxa_direita: 9.99
+
+two:
+  ombro: 9.99
+  torax: 9.99
+  braco_esquerdo: 9.99
+  braco_direito: 9.99
+  panturrilha_esquerda: 9.99
+  panturrilha_direita: 9.99
+  abdomem: 9.99
+  cintura: 9.99
+  quadril: 9.99
+  coxa_esquerda: 9.99
+  coxa_direita: 9.99

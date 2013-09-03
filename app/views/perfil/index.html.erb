@@ -1,0 +1,14 @@
+<div class="row">
+	<%if user_signed_in?%>
+Usuario: <%=@user.username%>
+<br />
+Suplementos:
+<% @user.suplementos.each do |suplemento|%>
+	Suplemento ID:
+	<p><%=suplemento.id%></p>
+
+	Nome do suplmento:
+	<p><%=suplemento.nome%></p>
+	<% end %>
+<%end%>
+</div>

@@ -1,0 +1,61 @@
+<%= form_for(@medida) do |f| %>
+  <% if @medida.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@medida.errors.count, "error") %> prohibited this medida from being saved:</h2>
+
+      <ul>
+      <% @medida.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :ombro %><br>
+    <%= f.text_field :ombro %>
+  </div>
+  <div class="field">
+    <%= f.label :torax %><br>
+    <%= f.text_field :torax %>
+  </div>
+  <div class="field">
+    <%= f.label :braco_esquerdo %><br>
+    <%= f.text_field :braco_esquerdo %>
+  </div>
+  <div class="field">
+    <%= f.label :braco_direito %><br>
+    <%= f.text_field :braco_direito %>
+  </div>
+  <div class="field">
+    <%= f.label :panturrilha_esquerda %><br>
+    <%= f.text_field :panturrilha_esquerda %>
+  </div>
+  <div class="field">
+    <%= f.label :panturrilha_direita %><br>
+    <%= f.text_field :panturrilha_direita %>
+  </div>
+  <div class="field">
+    <%= f.label :abdomem %><br>
+    <%= f.text_field :abdomem %>
+  </div>
+  <div class="field">
+    <%= f.label :cintura %><br>
+    <%= f.text_field :cintura %>
+  </div>
+  <div class="field">
+    <%= f.label :quadril %><br>
+    <%= f.text_field :quadril %>
+  </div>
+  <div class="field">
+    <%= f.label :coxa_esquerda %><br>
+    <%= f.text_field :coxa_esquerda %>
+  </div>
+  <div class="field">
+    <%= f.label :coxa_direita %><br>
+    <%= f.text_field :coxa_direita %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

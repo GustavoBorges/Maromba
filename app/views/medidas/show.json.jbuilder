@@ -1,0 +1,1 @@
+json.extract! @medida, :ombro, :torax, :braco_esquerdo, :braco_direito, :panturrilha_esquerda, :panturrilha_direita, :abdomem, :cintura, :quadril, :coxa_esquerda, :coxa_direita, :created_at, :updated_at

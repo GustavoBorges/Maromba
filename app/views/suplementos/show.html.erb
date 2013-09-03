@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @suplemento.nome %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @suplemento.marca %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @suplemento.link %>
+</p>
+
+<%= link_to 'Edit', edit_suplemento_path(@suplemento) %> |
+<%= link_to 'Back', suplementos_path %>

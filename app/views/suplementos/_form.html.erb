@@ -1,0 +1,29 @@
+<%= form_for(@suplemento) do |f| %>
+  <% if @suplemento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@suplemento.errors.count, "error") %> prohibited this suplemento from being saved:</h2>
+
+      <ul>
+      <% @suplemento.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nome %><br>
+    <%= f.text_field :nome %>
+  </div>
+  <div class="field">
+    <%= f.label :marca %><br>
+    <%= f.text_field :marca %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br>
+    <%= f.text_field :link %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,31 @@
+<h1>Listing suplementos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Marca</th>
+      <th>Link</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @suplementos.each do |suplemento| %>
+      <tr>
+        <td><%= suplemento.nome %></td>
+        <td><%= suplemento.marca %></td>
+        <td><%= suplemento.link %></td>
+        <td><%= link_to 'Show', suplemento %></td>
+        <td><%= link_to 'Edit', edit_suplemento_path(suplemento) %></td>
+        <td><%= link_to 'Destroy', suplemento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Suplemento', new_suplemento_path %>
